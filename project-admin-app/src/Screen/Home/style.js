@@ -1,0 +1,158 @@
+import { StyleSheet } from "react-native";
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    position: "relative",
+  },
+  sidebar: {
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    left: 0,
+    width: "60%",
+    backgroundColor: "#555",
+    padding: 20,
+    zIndex: 10, // Garante que a sidebar ficará em cima do conteúdo principal
+  },
+  mainContent: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: "#FFF",
+    borderTopLeftRadius: 20,
+    borderBottomLeftRadius: 20,
+    elevation: 4,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    marginTop: 70, // Ajuste para compensar a navbar fixa, se necessário
+  },
+  header: {
+    backgroundColor: "#803cff",
+    padding: 20,
+    borderRadius: 15,
+    marginBottom: 20,
+    elevation: 3,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    height: 160,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+  },
+  headerDate: {
+    color: "#FFF",
+    fontSize: 12,
+    marginBottom: 5,
+  },
+  welcomeMessage: {
+    color: "#FFF",
+    fontSize: 22,
+    fontWeight: "bold",
+  },
+  subMessage: {
+    color: "#DDD",
+    fontSize: 14,
+  },
+  functions: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+  },
+  functionBox: {
+    backgroundColor: "#FFF",
+    padding: 20,
+    borderRadius: 15,
+    width: "48%",
+    marginBottom: 20,
+    elevation: 1,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    borderWidth: 1,
+    borderColor: "#E0E0E0",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  functionIcon: {
+    width: 130,
+    height: 130,
+    marginBottom: 16,
+  },
+  functionTitle: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#333",
+    marginBottom: 5,
+  },
+  functionDescription: {
+    fontSize: 13,
+    color: "#666",
+    textAlign: "center",
+  },
+  profileBox: {
+    backgroundColor: "#FFF",
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  profilePic: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    marginRight: 15,
+  },
+  profileName: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#333",
+  },
+  membersSection: {
+    marginBottom: 20,
+  },
+  membersTitle: {
+    fontSize: 18,
+    fontWeight: "700",
+    marginBottom: 10,
+    color: "#4D47C3",
+  },
+  memberBox: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    backgroundColor: "#FFF",
+    padding: 15,
+    borderRadius: 15,
+    marginBottom: 10,
+    elevation: 1,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+  },
+  memberName: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#333",
+  },
+  memberRole: {
+    fontSize: 14,
+    color: "#666",
+  },
+  followButton: {
+    backgroundColor: "#7E57C2",
+    paddingVertical: 8,
+    paddingHorizontal: 15,
+    borderRadius: 8,
+  },
+  followText: {
+    color: "#FFF",
+    fontWeight: "600",
+  },
+});
+
+export default styles;
